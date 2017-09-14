@@ -4,11 +4,6 @@ namespace riandpratama\SimpleQuery;
 
 class Query 
 {
-    private $server = 'localhost',
-            $user   = 'root',
-            $pass   = '',
-            $dbname = 'tasklist';
-
     private static $_instance = null;
 
     private $_conn, $_table, $_columns = '*', $_query, $_statment, $_attr, $_params=[], $_prevData=[];
